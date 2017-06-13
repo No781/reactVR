@@ -1,0 +1,14 @@
+import React, { Component } from 'react';
+import { AppRegistry, asset, Pano, View, Text } from 'react-vr';
+
+export default class Basics extends Component {
+  render() {
+    return (
+      <View>
+        <Pano source={asset('drawn-vr.jpg')}></Pano>
+      </View>
+    )
+  }
+};
+
+AppRegistry.registerComponent('Basics', () => Basics);
